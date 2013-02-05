@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+<params>
+	<param name="host" type="text" default="" label="Host" description="Enter the host name for webERP database.">
+	</param>
+	<param name="database" type="text" default="" label="Database" description="Enter the data base name for webERP.">
+	</param>
+	<param name="databaseuser" type="text" default="" label="DatabaseUser" description="Enter the user name to access the database." >
+	</param>
+	<param name="userpassword" type="text" default="" label="UserPassword" description="Enter the password for this user to access the database." >
+	</param>
+	<param name="pathtopics" type="text" default="" label="PathToPictures" description="Enter the path where weberp picutres are stored." >
+	</param>
+	<param name="pathtopdfs" type="text" default="" label="PathToPDFs" description="Enter the path where weberp pdfs are stored.(Part Brochure)" >
+	</param>
+	<param name="allowedterms" type="text" default="" label="AllowedTerms" description="Enter allowed A/R Terms separated by commas." >
+	</param>
+	<param name="dontselltypes" type="text" default="" label="DontSellTypes" description="Enter part types to exclude separated by commas." >
+	</param>
+	<param name="bankaccount" type="text" default="" label="Bank Account" description="Enter Bank Account." >
+	</param>
+	<param name="currencycode" type="text" default="" label="Curency Code" description="Enter Curency Code." >
+	</param>
+	<param name="paypalname" type="text" default="" label="Paypal Name" description="Enter Paypal Name." >
+	</param>
+	<param name="paypalpassword" type="text" default="" label="Paypal Password" description="Enter Paypal Password." >
+	</param>
+	<param name="paypalsignature" type="text" default="" label="Paypal Signature" description="Enter Paypal Signature." >
+	</param>
+	<param name="sandboxname" type="text" default="" label="Paypal Name for Sandbox" description="Enter Paypal Name for Sandbox." >
+	</param>
+	<param name="sandboxpassword" type="text" default="" label="Paypal Password for Sandbox" description="Enter Paypal Password for Sandbox." >
+	</param>
+	<param name="sandboxsignature" type="text" default="" label="Paypal Signature for Sandbox" description="Paypal Signature for Sandbox." >
+	</param>
+	<param name="listsalestype" type="text" default="" label="Sales Type Code for List Price" description="Sales Type Code for List Price" >
+	</param>
+	<param name="salesmancode" type="text" default="" label="Default Salesman Code" description="Default Salesman Code" >
+	</param>
+	<param name="areas" type="text" default="" label="Default Area Code" description="Default Area Code" >
+	</param>
+	<param name="paymentterms" type="text" default="" label="Default Payment Terms" description="Default Payment Terms" >
+	</param>
+	<param name="salestype" type="text" default="" label="Sales Type - Default Price List" description="Sales Type - Default Price List" >
+	</param>
+	<param name="usertype" type="text" default="" label="Default User Type" description="Default User Type" >
+	</param>
+	<param name="gid" type="text" default="" label="gid - Default User Group" description="gid - Default User Group" >
+	</param>
+	<param name="locationcode" type="text" default="" label="Default Location Code" description="Default Location Code" >
+	</param>
+	<param name="adjustquantity" type="radio" default="1" label="Adjust quantity to on hand quantity if insufficient" description="Adjust quantity to on hand quantity if insufficient">
+  		<option value="1">Yes</option>
+  		<option value="0">No</option>
+	</param>
+	<param name="price0" type="radio" default="1" label="Choose to include items with a 0 price" description="Choose to include items with a 0 price">
+  		<option value="1">Yes</option>
+  		<option value="0">No</option>
+	</param>
+	<param name="radio" type="radio" default="1" label="Choose between radio and drop down selection types" description="Choose between radio and drop down selection types">
+  		<option value="1">radio</option>
+  		<option value="0">drop down</option>
+	</param>
+	<param name="environment" type="radio" default="1" label="Choose between live and sandbox for Paypal" description="Choose between live and sandbox for Paypal">
+  		<option value="1">live</option>
+  		<option value="0">sandbox</option>
+	</param>
+	<param name="debug" type="radio" default="0" label="Show Paypal information from sale" description="Show Paypal information from sale">
+  		<option value="1">On</option>
+  		<option value="0">Off</option>
+	</param>
+	<param name="sendemail" type="radio" default="1" label="Send Email" description="Send Email for new registrations and order confirmation">
+  		<option value="1">Yes</option>
+  		<option value="0">No</option>
+	</param>
+	<param name="showquantityonhandcolumn" type="radio" default="1" label="Show Quantity on Hand Column" description="Show Quanitiy on hand collumn on catalog">
+  		<option value="1">Yes</option>
+  		<option value="0">No</option>
+	</param>	
+	<param name="showquantityonhand" type="radio" default="1" label="Show Quantity on Hand otherwise show Yes/No" description="Show Quanitiy Or Yes - No">
+  		<option value="1">Yes</option>
+  		<option value="0">No</option>
+	</param>
+	<param name="fromemail" type="text" default="" label="Email sent from" description="Outbound emails will be from" >
+	</param>
+</params>
+</config>

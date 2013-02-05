@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+	<name>JBarCode</name>
+	<author>Mo Kelly</author>
+	<authorEmail>mokelly@rockwall-computer.com</authorEmail>
+	<authorUrl>rockwall-computer.com</authorUrl>
+	<creationDate>May 27, 2009</creationDate>
+	<copyright>Copyright (C) 2009 Mo Kelly - All rights reserved.</copyright>
+	<version>1.0</version>
+	<license>GNU / GPL</license>
+	<description><![CDATA[JBarcode is a component for printing barcode labels for JInventory
+	
+	<P>This software contains code derived from an article in the magazine
+   php|architect by Marco Tabini.</P>
+
+   <P>This software contains code derived from Oliver Plathey - The author of
+   FPDF. FPDF is available from: http://www.fpdf.org</P>
+
+  <P> The LZW- and the ASCII85-Decoder are adapted from the iText-Library
+   http://www.lowagie.com/iText/</P>
+   
+   <P>In the above referenced software, only the paths were changed to conform to Joomla Standards.  </P>
+   
+	<p>																																										
+	<img src="http://joomlamo.com/joomlamo/images/stories/barcode.jpg" border="0" alt="barcode" title="barcode" hspace="10" vspace="10" align="left" />
+	Joomla! version 1.5 Module
+</p>
+<P>Documentation for JBarcode is at <A HREF="http://joomlamo.com/joomlamo/products/barcode-printing-for-joomla.html">JoomlaMo.com</A></P>
+<p><h2>
+	<font color="#ff6600">
+		<font face="arial,helvetica,sans-serif">
+			<font color="#999999">
+				If you enjoy JBarcode, Please 
+			</font>
+			review 
+			<font color="#999999">
+				JBarcode
+			</font> 
+			<font color="#999999">
+				or 
+			</font>
+				vote 
+		</font>
+	</font>
+	for it at 
+	<a href="http://extensions.joomla.org/extensions/content-&-news/quotes/9080/details">
+		JBarcode
+	</a>.  
+	Just click the star that represents your evaluation. <strong>Thanks!  </strong></h2>
+</p>
+<CENTER><H2>Thank you for installing JBarcode!</H2></CENTER>
+
+<P>Please check out the other Joomla Extensions at <A HREF="http://joomlamo.com">JoomlaMo.com</A></P>	
+<UL>
+<LI>CARTwebERP 		- No maintenance shopping carte integrated with webERP Accounting System</LI>
+<LI>JInventory 		- Remote Inventory tracking system</LI>
+<LI>MoQuotes 			- MoQuotes is a Joomla module that displays a quote from an online feed.</LI>
+<LI>webERPaar  		- Customer Accounts Receivable integration with webERP Accounting System</LI>
+<LI>webERPcust 		- Customer and Branch udates for webERP Accounting System</LI>
+<LI>webERPInventory	- Inventory reorder points and pricing for webERP Accounting System</LI>
+</ul>]]></description>
+
+
+	<installfile>install.jbarcode.php</installfile>
+	<administration>
+		<menu img="components/com_jinventory/images/barcode.png">JBarcode</menu>
+		<submenu>
+			<menu link="option=com_jbarcode&amp;controller=barcode">Inventory</menu>
+			<menu link="option=com_jbarcode&amp;controller=receipts">Receipts</menu>
+			<menu link="option=com_jbarcode&amp;controller=orders">Orders</menu>
+		</submenu>
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>jbarcode.php</filename>
+			<!-- install controllers -->
+			<filename>controllers/orders.php</filename>
+			<filename>controllers/printpdf.php</filename>
+			<filename>controllers/receipts.php</filename>
+			<filename>controllers/index.html</filename>
+			<filename>controllers/barcode.php</filename>
+			<!-- install models -->
+			<filename>models/orders.php</filename>
+			<filename>models/receipts.php</filename>
+			<filename>models/index.html</filename>
+			<filename>models/barcode.php</filename>
+			<filename>models/printpdf.php</filename>
+			<!-- install pdf class -->
+			<filename>pdfb/class.pdf.php</filename>  
+			<filename>pdfb/fpdf_tpl.php</filename>  
+         <filename>pdfb/pdfb.php</filename>  
+			<filename>pdfb/barcode/barcode.php</filename>
+         <filename>pdfb/barcode/barcodeimage.php</filename>
+         <filename>pdfb/barcode/c128a.php</filename>
+         <filename>pdfb/barcode/c128b.php</filename>
+         <filename>pdfb/barcode/c128c.php</filename>
+         <filename>pdfb/barcode/c39.php</filename>
+         <filename>pdfb/barcode/i25.php</filename>
+         <filename>pdfb/barcode/lesser.txt</filename>
+         <filename>pdfb/barcode/upca.php</filename>
+         <filename>pdfb/fpdf_fpdi/faq.htm</filename>
+         <filename>pdfb/fpdf_fpdi/changelog.txt</filename>
+         <filename>pdfb/fpdf_fpdi/fpdf.php</filename>
+         <filename>pdfb/fpdf_fpdi/fpdi_pdf_parser.php</filename>
+         <filename>pdfb/fpdf_fpdi/pdf_context.php</filename>
+         <filename>pdfb/fpdf_fpdi/license</filename>
+         <filename>pdfb/fpdf_fpdi/fpdf_tpl.php</filename>
+         <filename>pdfb/fpdf_fpdi/histo.htm</filename>
+         <filename>pdfb/fpdf_fpdi/pdf_parser.php</filename>
+         <filename>pdfb/fpdf_fpdi/wrapper_functions.php</filename>
+         <filename>pdfb/fpdf_fpdi/notice</filename>
+         <filename>pdfb/fpdf_fpdi/demo.php</filename>
+         <filename>pdfb/fpdf_fpdi/fpdf.css</filename>
+         <filename>pdfb/fpdf_fpdi/fpdi.php</filename>
+         <filename>pdfb/fpdf_fpdi/install.txt</filename>
+         <filename>pdfb/fpdf_fpdi/pdfdoc.pdf</filename>
+         <filename>pdfb/fpdf_fpdi/decoders/ascii85.php</filename>
+         <filename>pdfb/fpdf_fpdi/decoders/lzw.php</filename>
+         <filename>pdfb/fpdf_fpdi/doc/acceptpagebreak.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/close.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/gety.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/ln.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/setautopagebreak.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/setfont.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/setmargins.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/setx.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/addfont.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/error.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/header.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/multicell.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/setcompression.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/setfontsize.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/setrightmargin.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/setxy.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/addlink.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/footer.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/image.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/output.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/setcreator.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/setkeywords.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/setsubject.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/sety.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/addpage.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/fpdf.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/index.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/pageno.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/setdisplaymode.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/setleftmargin.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/settextcolor.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/text.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/aliasnbpages.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/getstringwidth.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/line.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/rect.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/setdrawcolor.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/setlinewidth.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/settitle.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/write.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/cell.htm </filename>
+         <filename>pdfb/fpdf_fpdi/doc/getx.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/link.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/setauthor.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/setfillcolor.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/setlink.htm</filename>
+         <filename>pdfb/fpdf_fpdi/doc/settopmargin.htm</filename>
+         <filename>pdfb/fpdf_fpdi/font/courier.php</filename>   
+         <filename>pdfb/fpdf_fpdi/font/helveticab.php</filename>
+         <filename>pdfb/fpdf_fpdi/font/helveticai.php</filename>
+         <filename>pdfb/fpdf_fpdi/font/symbol.php</filename>
+         <filename>pdfb/fpdf_fpdi/font/timesb.php</filename>
+         <filename>pdfb/fpdf_fpdi/font/timesi.php</filename>
+         <filename>pdfb/fpdf_fpdi/font/helvetica.php</filename>
+         <filename>pdfb/fpdf_fpdi/font/helveticabi.php</filename>
+         <filename>pdfb/fpdf_fpdi/font/times.php</filename>
+         <filename>pdfb/fpdf_fpdi/font/timesbi.php</filename>
+         <filename>pdfb/fpdf_fpdi/font/zapfdingbats.php</filename>
+         <filename>pdfb/fpdf_fpdi/font/makefont/cp1250.map</filename>
+         <filename>pdfb/fpdf_fpdi/font/makefont/cp1253.map</filename>
+         <filename>pdfb/fpdf_fpdi/font/makefont/cp1257.map</filename>
+         <filename>pdfb/fpdf_fpdi/font/makefont/iso-8859-1.map</filename>
+         <filename>pdfb/fpdf_fpdi/font/makefont/iso-8859-16.map</filename>
+         <filename>pdfb/fpdf_fpdi/font/makefont/iso-8859-5.map</filename>
+         <filename>pdfb/fpdf_fpdi/font/makefont/koi8-r.map</filename>
+         <filename>pdfb/fpdf_fpdi/font/makefont/cp1251.map</filename>
+         <filename>pdfb/fpdf_fpdi/font/makefont/cp1254.map</filename>
+         <filename>pdfb/fpdf_fpdi/font/makefont/cp1258.map</filename>
+         <filename>pdfb/fpdf_fpdi/font/makefont/iso-8859-11.map</filename>
+         <filename>pdfb/fpdf_fpdi/font/makefont/iso-8859-2.map</filename>
+         <filename>pdfb/fpdf_fpdi/font/makefont/iso-8859-7.map</filename>
+         <filename>pdfb/fpdf_fpdi/font/makefont/koi8-u.map</filename>
+         <filename>pdfb/fpdf_fpdi/font/makefont/cp1252.map</filename>
+         <filename>pdfb/fpdf_fpdi/font/makefont/cp1255.map</filename>
+         <filename>pdfb/fpdf_fpdi/font/makefont/cp874.map</filename>
+         <filename>pdfb/fpdf_fpdi/font/makefont/iso-8859-15.map</filename>
+         <filename>pdfb/fpdf_fpdi/font/makefont/iso-8859-4.map</filename>
+         <filename>pdfb/fpdf_fpdi/font/makefont/iso-8859-9.map</filename>
+         <filename>pdfb/fpdf_fpdi/font/makefont/makefont.php</filename>
+         <filename>pdfb/fpdf_fpdi/tutorial/20k_c1.txt</filename>    
+         <filename>pdfb/fpdf_fpdi/tutorial/calligra.php</filename>
+         <filename>pdfb/fpdf_fpdi/tutorial/countries.txt</filename>
+         <filename>pdfb/fpdf_fpdi/tutorial/logo_pb.png</filename>
+         <filename>pdfb/fpdf_fpdi/tutorial/tuto1.php</filename>
+         <filename>pdfb/fpdf_fpdi/tutorial/tuto3.htm</filename>
+         <filename>pdfb/fpdf_fpdi/tutorial/tuto4.php</filename>
+         <filename>pdfb/fpdf_fpdi/tutorial/tuto6.htm</filename>
+         <filename>pdfb/fpdf_fpdi/tutorial/tuto7.php</filename>
+         <filename>pdfb/fpdf_fpdi/tutorial/20k_c2.txt</filename>
+         <filename>pdfb/fpdf_fpdi/tutorial/calligra.ttf</filename>
+         <filename>pdfb/fpdf_fpdi/tutorial/index.htm</filename>
+         <filename>pdfb/fpdf_fpdi/tutorial/makefont.php</filename>
+         <filename>pdfb/fpdf_fpdi/tutorial/tuto2.htm</filename>
+         <filename>pdfb/fpdf_fpdi/tutorial/tuto3.php</filename>
+         <filename>pdfb/fpdf_fpdi/tutorial/tuto5.htm</filename>
+         <filename>pdfb/fpdf_fpdi/tutorial/tuto6.php</filename>
+         <filename>pdfb/fpdf_fpdi/tutorial/calligra.afm</filename>
+         <filename>pdfb/fpdf_fpdi/tutorial/calligra.z</filename>
+         <filename>pdfb/fpdf_fpdi/tutorial/logo.png</filename>
+         <filename>pdfb/fpdf_fpdi/tutorial/tuto1.htm</filename>
+         <filename>pdfb/fpdf_fpdi/tutorial/tuto2.php</filename>
+         <filename>pdfb/fpdf_fpdi/tutorial/tuto4.htm</filename>
+         <filename>pdfb/fpdf_fpdi/tutorial/tuto5.php</filename>
+         <filename>pdfb/fpdf_fpdi/tutorial/tuto7.htm</filename>
+			<!-- install views -->
+			<filename>views/index.html</filename>
+			<!-- view orders -->
+			<filename>views/orders/index.html</filename>
+			<filename>views/orders/view.html.php</filename>
+			<filename>views/orders/tmpl/index.html</filename>
+			<filename>views/orders/tmpl/default.php</filename>
+			<!-- view receipts -->
+			<filename>views/receipts/index.html</filename>
+			<filename>views/receipts/view.html.php</filename>
+			<filename>views/receipts/tmpl/index.html</filename>
+			<filename>views/receipts/tmpl/default.php</filename>
+			<!-- view barcode -->
+			<filename>views/barcode/index.html</filename>
+			<filename>views/barcode/view.html.php</filename>
+			<filename>views/barcode/tmpl/index.html</filename>
+			<filename>views/barcode/tmpl/default.php</filename>
+			<!-- view printpdf -->
+			<filename>views/printpdf/index.html</filename>
+			<filename>views/printpdf/view.pdf.php</filename>
+			<filename>views/printpdf/tmpl/index.html</filename>
+			<filename>views/printpdf/tmpl/default.php</filename>
+		</files>
+	</administration>
+</install>

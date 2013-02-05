@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD module 1.0//EN" "http://dev.joomla.org/xml/1.5/module-install.dtd">
+<install type="module" version="1.5">
+  <name>DTRegFieldStats</name>
+  <creationDate>21-Jan-2011</creationDate>
+  <author>Mo Kelly</author>
+  <authorEmail>mo@joomlamo.com</authorEmail>
+  <authorUrl>www.joomlamo.com</authorUrl>
+  <copyright>Mo Kelly</copyright>
+  <license>GNU General Public License</license>
+  <version>1.27</version>
+  <description>MODULE_DESCRIPTION</description>
+  <files folder="site">
+    <folder>languages</folder>
+    <filename>index.html</filename>
+    <filename module="mod_dtregfieldstats">mod_dtregfieldstats.php</filename>
+  </files>
+  <params>
+    <param name="columns" type="list" default="1" label="Choose the number of columns" description="2 columns uses less horizontal space, 3 columns uses less vertical space">
+      <option value="2">2 Columns</option>
+      <option value="3">3 Columns</option>
+    </param>
+  </params>
+</install>

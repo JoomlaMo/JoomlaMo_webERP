@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6" method="upgrade">
+  <name>Teams</name>
+  <creationDate>24-Jul-2011</creationDate>
+  <author>Mo Kelly</author>
+  <authorEmail>mo@joomlamo.com</authorEmail>
+  <authorUrl>http://joomlamo.com</authorUrl>
+  <copyright>2010</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <version>1.7</version>
+  <description>Teams</description>
+  <scriptfile/>
+  <install>
+    <sql>
+      <file driver="mysql" charset="utf8">install/sql/install.sql</file>
+    </sql>
+  </install>
+  <uninstall>
+    <sql>
+      <file driver="mysql" charset="utf8">install/sql/uninstall.sql</file>
+    </sql>
+  </uninstall>
+  <update>
+    <sql/>
+  </update>
+  <installfile>install/install.package.php</installfile>
+  <uninstallfile>install/uninstall.package.php</uninstallfile>
+  <files folder="site">
+    <folder>controllers</folder>
+    <folder>images</folder>
+    <folder>language</folder>
+    <folder>languages</folder>
+    <folder>models</folder>
+    <folder>views</folder>
+    <filename>controller.php</filename>
+    <filename>icon.css</filename>
+    <filename>index.html</filename>
+    <filename>license.html</filename>
+    <filename>teams.php</filename>
+  </files>
+  <administration>
+	<menu img="components/com_teams/assets/images/com_teams.ico">teams</menu>
+    <files folder="admin">
+      <folder>assets</folder>
+      <folder>controllers</folder>
+      <folder>helpers</folder>
+      <folder>install</folder>
+      <folder>language</folder>
+      <folder>languages</folder>
+      <folder>models</folder>
+      <folder>tables</folder>
+      <folder>views</folder>
+      <filename>CHANGELOG.php</filename>
+      <filename>config.xml</filename>
+      <filename>controller.php</filename>
+      <filename>index.html</filename>
+      <filename>teams.php</filename>
+    </files>
+  </administration>
+  <params/>
+</extension>

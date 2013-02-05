@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6">
+  <name>MoQuotes</name>
+  <creationDate>02-Feb-2011</creationDate>
+  <author>Mo Kelly</author>
+  <authorEmail>mo@joomlamo.com</authorEmail>
+  <authorUrl>www.joomlamo.com</authorUrl>
+  <copyright>Mo Kelly</copyright>
+  <license>GNU General Public License</license>
+  <version>1.6</version>
+  <description>MODULE_DESCRIPTION</description>
+  <files folder="site">
+    <folder>language</folder>
+    <filename>index.html</filename>
+    <filename module="mod_moquotes">mod_moquotes.php</filename>
+  </files>
+  <languages folder="site/language">
+    <language tag="en-GB">en-GB.mod_moquotes.ini</language>
+    <language tag="index">index.html</language>
+  </languages>
+	<config>
+		<fields
+			name="params">
+			<fieldset
+				name="basic">
+				<field
+					name="moduleclass_sfx"
+					size="40"
+					type="text" default=""
+					label="Module Class Suffix"
+					description="A suffix to be applied to the css class of the module (table.moduletable). this allows individual module styling." />
+				<field
+					name="quote_style"
+					size="20"
+					type="text" default=""
+					label="Quote Style"
+					description="The CSS style tag to use for the quote text." />
+				<field
+					name="source_rss"
+					type="list"
+					default="1"
+					label="Default Service"
+					description="Choose one of the Service feeds.">
+					<option value="1">Quote of the Day - DontQuoteMe</option>
+					<option value="2">Funny Quotes - AllGreatQuotes</option>
+					<option value="3">Quotes - AllGreatQuotes</option>
+					<option value="4">Quote of the Day - QuotesAndPoem</option>
+					<option value="5">Jokes - JokesByKids</option>
+					<option value="6">Quotes - QuotationsPage</option>
+					<option value="7">Random Quote - QuoteDB</option>
+					<option value="8">Daily Quote - QuoteDB</option>
+					<option value="9">Quote of the Day - BrainyQuote</option>
+					<option value="10">Love - BrainyQuote</option>
+					<option value="11">Funny - BrainyQuote</option>
+					<option value="12">Art - BrainyQuote</option>
+					<option value="13">Nature - BrainyQuote</option>
+					<option value="14">Funny Quotes - thepisstakers</option>
+					<option value="15">Horse Quotes - SayItWithHorses</option>
+					<option value="16">Educational Quotes - TeacherWeb</option>
+					<option value="17">Quote of the Day - GurteenKnowledge</option>
+					<option value="18">Motivational - MotivationalInspirationalQuotes</option>
+					<option value="19">Funny Quote of the Day - ScoreQuotes</option>
+					<option value="20">Bible Verse of the Day - VerseOfTheDay</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

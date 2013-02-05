@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD module 1.0//EN" "http://joomla.org/xml/dtd/1.5/module-install.dtd">
+<install type="module" version="1.5">
+  <name>teamstandings</name>
+  <creationDate>21-Aug-2010</creationDate>
+  <author>Mo Kelly</author>
+  <authorEmail>mo@joomlamo.com</authorEmail>
+  <authorUrl>http://joomlamo.com</authorUrl>
+  <copyright>2010</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <version>1</version>
+  <description>Display team standings according to a point scheme</description>
+  <files folder="site">
+    <folder>tmpl</folder>
+    <filename>CHANGELOG.php</filename>
+    <filename>helper.php</filename>
+    <filename module="mod_teamstandings">mod_teamstandings.php</filename>
+  </files>
+  <params>
+    <param name="StandingType" type="radio" default="2" label="Two Types - Won/Loss Percentage and Point Assignment" description="Display one or two columns of product in catalog">
+      <option value="1">Won/Loss Percentage</option>
+      <option value="2">Point Assignment</option>
+    </param>
+    <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable). this allows individual module styling."/>
+    <param name="WinPoints" type="text" size="3" default="3" label="Point Assignment - Win Points" description="The number of points a team gets for a win."/>
+    <param name="TiePoints" type="text" size="2" default="3" label="Point Assignment - Tie Points" description="The number of points a team gets for a tie."/>
+    <param name="LoosePoints" type="text" size="1" default="3" label="Point Assignment - Loose Points" description="The number of points a team gets for a Loss."/>
+  </params>
+</install>

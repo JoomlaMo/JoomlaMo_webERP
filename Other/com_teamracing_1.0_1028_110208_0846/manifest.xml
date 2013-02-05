@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD component 1.0//EN" "http://joomla.org/xml/dtd/1.5/component-install.dtd">
+<install type="component" version="1.5">
+  <name>TeamRacing</name>
+  <creationDate>08-Feb-2011</creationDate>
+  <author>Mo Kelly</author>
+  <authorEmail>mo@joomlamo.com</authorEmail>
+  <authorUrl>http://www.joomlamo.com</authorUrl>
+  <copyright>Mo Kelly</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <version>1.0</version>
+  <description>Record the time and speed for races.  Display the finishers in order.</description>
+  <installfile>install/install.php</installfile>
+  <uninstallfile>install/uninstall.php</uninstallfile>
+  <install>
+    <sql>
+      <file driver="mysql" charset="utf8">install/sql/install.utf.sql</file>
+    </sql>
+  </install>
+  <uninstall>
+    <sql>
+      <file driver="mysql" charset="utf8">install/sql/uninstall.utf.sql</file>
+    </sql>
+  </uninstall>
+  <files folder="site">
+    <folder>controllers</folder>
+    <folder>data</folder>
+    <folder>models</folder>
+    <folder>tables</folder>
+    <folder>views</folder>
+    <filename>controller.php</filename>
+    <filename>teamracing.php</filename>
+  </files>
+  <administration>
+    <menu img="components/com_teamracing/assets/images/com_teamracing.ico" link="option=com_teamracing">TeamRacing</menu>
+    <files folder="admin">
+      <folder>assets</folder>
+      <folder>helpers</folder>
+      <folder>install</folder>
+      <filename>CHANGELOG.php</filename>
+      <filename>admin.teamracing.php</filename>
+      <filename>config.xml</filename>
+    </files>
+  </administration>
+  <params/>
+</install>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6" method="upgrade">
+  <name>com_emergencypreparedness</name>
+  <creationDate>19-Feb-2011</creationDate>
+  <author>Mo Kelly</author>
+  <authorEmail>mo@joomlamo.com</authorEmail>
+  <authorUrl>http://www.joomlamo.com</authorUrl>
+  <copyright>(C) 2009 All rights reserved.</copyright>
+  <license></license>
+  <version>1.6</version>
+  <description> You have installed Emergency Preparedness Inventory Control</description>
+  <installfile/>
+  <uninstallfile/>
+  <install>
+    <sql>
+      <file driver="mysql" charset="utf8">install.sql</file>
+    </sql>
+  </install>
+  <uninstall>
+    <sql>
+      <file driver="mysql" charset="utf8">uninstall.sql</file>
+    </sql>
+  </uninstall>
+  <update>
+    <sql/>
+  </update>
+  <files folder="site">
+    <folder>controllers</folder>
+    <folder>images</folder>
+    <folder>models</folder>
+    <folder>tables</folder>
+    <folder>views</folder>
+    <filename>emergencypreparedness.php</filename>
+    <filename>icon.css</filename>
+    <filename>index.html</filename>
+  </files>
+  <administration>
+   <menu>Emergency Preparedness</menu>
+    <submenu>
+      <menu img="js/ThemeOffice/component.png" link="option=com_emergencypreparedness&amp;controller=assettype" view="assettype">Asset Type</menu>
+      <menu img="js/ThemeOffice/component.png" link="option=com_emergencypreparedness&amp;controller=locations" view="locations">Locations</menu>
+      <menu img="js/ThemeOffice/component.png" link="option=com_emergencypreparedness&amp;controller=keyword" view="keyword">Keywords</menu>
+    </submenu>
+    <files folder="admin">
+      <folder>controllers</folder>
+      <folder>helpers</folder>
+      <folder>images</folder>
+      <folder>models</folder>
+      <folder>tables</folder>
+      <folder>views</folder>
+      <filename>admin.emergencypreparedness.php</filename>
+      <filename>index.html</filename>
+      <filename>install.sql</filename>
+      <filename>uninstall.sql</filename>
+    </files>
+  </administration>
+</extension>

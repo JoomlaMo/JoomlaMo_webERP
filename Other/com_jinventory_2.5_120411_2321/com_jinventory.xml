@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6" method="upgrade">
+  <name>JInventory</name>
+  <creationDate>11-Apr-2012</creationDate>
+  <author>www.joomlamo.com</author>
+  <authorEmail>mo@.joomlamo.com</authorEmail>
+  <authorUrl>http://joomlamo.com</authorUrl>
+  <copyright>(C) 2012</copyright>
+  <license>GPL</license>
+  <version>2.5</version>
+  <description>MODULE_DESCRIPTION</description>
+  <scriptfile/>
+  <install>
+    <sql>
+      <file driver="" charset="utf8">install.sql</file>
+    </sql>
+  </install>
+  <uninstall>
+    <sql>
+      <file driver="" charset="utf8">uninstall.sql</file>
+    </sql>
+  </uninstall>
+  <update>
+    <schemas/>
+  </update>
+  <installfile>install.jinventory.php</installfile>
+  <files folder="site">
+    <folder>controllers</folder>
+    <folder>language</folder>
+    <folder>models</folder>
+    <folder>tables</folder>
+    <folder>views</folder>
+    <filename>index.html</filename>
+    <filename>jinventory.php</filename>
+  </files>
+  <administration>
+    <menu img="components/com_jinventory/images/barcode.png">JInventory</menu>
+    <submenu>
+      <menu img="class:class:component" link="option=com_jinventory&amp;controller=inventory">JInventory</menu>
+      <menu img="class:class:component" link="option=com_jinventory&amp;controller=usage">Usage</menu>
+      <menu img="class:class:component" link="option=com_jinventory&amp;controller=createorders">Create Orders</menu>
+      <menu img="class:class:component" link="option=com_jinventory&amp;controller=createreceipts">Create Receipts</menu>
+    </submenu>
+    <files folder="admin">
+      <folder>controllers</folder>
+      <folder>images</folder>
+      <folder>install</folder>
+      <folder>models</folder>
+      <folder>tables</folder>
+      <folder>views</folder>
+      <filename>admin.jinventory.php</filename>
+      <filename>index.html</filename>
+      <filename>install.sql</filename>
+      <filename>uninstall.sql</filename>
+    </files>
+  </administration>
+  <params>
+    <param name="Email_Report" type="text" default="" label="Email_Report" description="Email_Report"></param>
+  </params>
+  <config/>
+</extension>

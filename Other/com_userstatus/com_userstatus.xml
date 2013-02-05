@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+<name>User Status</name>
+<author>Mo Kelly</author>
+<authorUrl>www.joomlamo.com</authorUrl>
+<authorEmail>mo@joomlamo.com</authorEmail>
+<creationDate>2010-03-01</creationDate>
+<copyright>Mo Kelly</copyright>
+<license>GNU General Public License http://www.gnu.org/copyleft/gpl.html</license>
+<version>1.0</version>
+	<description>
+		<![CDATA[ 
+
+			<p>
+			<br /></p>
+			<br />		
+		<p>
+			<br />Live demo website is available at
+			<a href="http://userstatus.joomlamo.com/" target="_blank" style="cursor:help;">http://userstatus.joomlamo.com/</a>
+			<br />Live administration demo website is available at
+			<a href="http://userstatus.joomlamo.com/administrator/" target="_blank" style="cursor:help;">http://userstatus.joomlamo.com/administrator</a>
+			<br />
+			<br />For more information please visit:
+			<a href="http://joomlamo.com/" target="_blank" style="cursor:help;">http://joomlamo.com</a>
+			</p><p>
+	<img src="http://joomlamo.com/joomlamo/images/stories/train.jpg" border="0" alt="userstatus" title="userstatus" align="left"  style="padding:10px;"/>
+	Joomla! version 1.5 Module
+</p>
+<P>Documentation for UserSatus is at <A HREF="http://joomlamo.com/joomlamo/products/userstatus.html">JoomlaMo.com</A></P>
+<p><h4>
+	<font color="#ff6600">
+		<font face="arial,helvetica,sans-serif">
+			<font color="#999999">
+				If you enjoy userstatus, Please 
+			</font>
+			review 
+			<font color="#999999">
+				UserStatus
+			</font> 
+			<font color="#999999">
+				or 
+			</font>
+				vote 
+		</font>
+	</font>
+	for it at 
+	<a href="http://extensions.joomla.org/extensions/e%252dcommerce/shopping-cart/7951/details">
+		UserStatus
+	</a>.  
+	Just click the star that represents your evaluation. <strong>Thanks!  </strong></h4>
+</p>
+<CENTER><H2>Thank you for installing UserStatus!</H2></CENTER>
+
+<P>Please check out the other Joomla Extensions at <A HREF="http://joomlamo.com">JoomlaMo.com</A></P>	
+<UL>
+<LI>CARTwebERP 		- No maintenance shopping carte integrated with webERP Accounting System</LI>
+<LI>JInventory 		- Remote Inventory tracking system</LI>
+<LI>JBarcode   		- Bar code printing for JInventory</LI>
+<LI>webERPaar  		- Customer Accounts Receivable integration with webERP Accounting System</LI>
+<LI>webERPcust 		- Customer and Branch udates for webERP Accounting System</LI>
+<LI>MoQuotes 			- MoQuotes is a Joomla module that displays a quote from an online feed.</LI>
+</ul>
+]]></description>
+<!-- database section -->
+	<install>
+		<sql folder="admin">
+			<file driver="mysql" charset="utf8">install.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql  folder="admin">
+			<file driver="mysql" charset="utf8">uninstall.sql</file>
+		</sql>
+	</uninstall>
+	
+	<installfile>install.userstatus.php</installfile>
+	<files folder="site">
+		<filename>userstatus.php</filename>
+		<filename>index.html</filename>	
+		<!-- install controllers -->
+		<filename>controllers/userstatus.php</filename>
+		<filename>controllers/index.html</filename>
+		<!-- install images  -->
+		<filename>images/index.html</filename>
+		<filename>images/red.png</filename>
+		<filename>images/green.png</filename>
+		<filename>images/yellow.png</filename>
+		<filename>images/userstatus.png</filename>
+		<!-- install models -->
+		<filename>models/index.html</filename>
+		<filename>models/userstatus.php</filename>
+		<!-- install tables -->
+		<filename>tables/index.html</filename>
+		<filename>tables/userstatus.php</filename>
+		<!-- install view  -->
+		<filename>views/index.html</filename>
+		<filename>views/userstatus/index.html</filename>
+		<filename>views/userstatus/view.html.php</filename>
+		<filename>views/userstatus/tmpl/index.html</filename>
+		<filename>views/userstatus/tmpl/default.php</filename>		
+	</files>
+	
+	<administration>
+		<menu img="components/com_userstatus/images/userstatus.png">User Status</menu>
+		<submenu>
+			<menu link="option=com_userstatus&amp;controller=userstatus">User Location</menu>
+			<menu link="option=com_userstatus&amp;controller=locations">Locations</menu>
+		</submenu>
+		<files folder="admin">
+			<filename>admin.userstatus.php</filename>
+			<filename>config.xml</filename>
+			<filename>index.html</filename>
+			<!-- install controllers -->
+			<filename>controllers/locations.php</filename>
+			<filename>controllers/locations_detail.php</filename>
+			<filename>controllers/userstatus.php</filename>
+			<filename>controllers/userstatus_detail.php</filename>
+			<filename>controllers/index.html</filename>
+				<!-- install models -->
+			<filename>models/locations.php</filename>
+			<filename>models/locations_detail.php</filename>
+			<filename>models/userstatus.php</filename>
+			<filename>models/userstatus_detail.php</filename>
+			<filename>models/index.html</filename>
+			<!-- install tables -->
+			<filename>tables/locations_detail.php</filename>
+			<filename>tables/userstatus.php</filename>
+			<filename>tables/index.html</filename>
+			<!-- install views -->
+			<filename>views/index.html</filename>
+			<!-- view user-->
+			<filename>views/userstatus/index.html</filename>
+			<filename>views/userstatus/view.html.php</filename>
+			<filename>views/userstatus/tmpl/index.html</filename>
+			<filename>views/userstatus/tmpl/default.php</filename>
+			
+			<!-- view detail-->
+			<filename>views/userstatus_detail/index.html</filename>
+			<filename>views/userstatus_detail/view.html.php</filename>
+			<filename>views/userstatus_detail/tmpl/index.html</filename>
+			<filename>views/userstatus_detail/tmpl/default.php</filename>			
+			<!-- view locations -->
+			<filename>views/locations/index.html</filename>
+			<filename>views/locations/view.html.php</filename>
+			<filename>views/locations/tmpl/index.html</filename>
+			<filename>views/locations/tmpl/default.php</filename>
+			<!-- view locations_detail -->
+			<filename>views/locations_detail/index.html</filename>
+			<filename>views/locations_detail/view.html.php</filename>
+			<filename>views/locations_detail/tmpl/index.html</filename>
+			<filename>views/locations_detail/tmpl/form.php</filename>
+			<!-- database script -->
+			<filename>install.sql</filename>
+			<filename>uninstall.sql</filename>
+		</files>
+	</administration>
+</install>

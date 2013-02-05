@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD component 1.0//EN" "http://joomla.org/xml/dtd/1.5/component-install.dtd">
+<install type="component" version="1.5" method="upgrade">
+  <name>teams</name>
+  <creationDate>18-Feb-2011</creationDate>
+  <author>Mo Kelly</author>
+  <authorEmail>mo@joomlamo.com</authorEmail>
+  <authorUrl>http://joomlamo.com</authorUrl>
+  <copyright>2010</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <version>1.4</version>
+  <description>Teams</description>
+  <installfile>install/install.package.php</installfile>
+  <uninstallfile>install/uninstall.package.php</uninstallfile>
+  <install>
+    <sql>
+      <file driver="mysql" charset="utf8">install/sql/install.sql</file>
+    </sql>
+  </install>
+  <uninstall>
+    <sql>
+      <file driver="mysql" charset="utf8">install/sql/uninstall.sql</file>
+    </sql>
+  </uninstall>
+  <files folder="site">
+    <folder>controllers</folder>
+    <folder>images</folder>
+    <folder>language</folder>
+    <folder>languages</folder>
+    <folder>models</folder>
+    <folder>time_picker_files</folder>
+    <folder>views</folder>
+    <filename>controller.php</filename>
+    <filename>examples_time_picker.html</filename>
+    <filename>icon.css</filename>
+    <filename>index.html</filename>
+    <filename>license.html</filename>
+    <filename>mootools.v1.11.js</filename>
+    <filename>nogray_time_picker.js</filename>
+    <filename>nogray_time_picker_min.js</filename>
+    <filename>teams.php</filename>
+  </files>
+  <languages folder="site/language">
+    <language tag="en-GB">en-GB.com_teams.ini</language>
+  </languages>
+  <administration>
+    <menu img="components/com_teams/assets/images/com_teams.ico" link="option=com_teams">teams</menu>
+    <files folder="admin">
+      <folder>assets</folder>
+      <folder>controllers</folder>
+      <folder>helpers</folder>
+      <folder>install</folder>
+      <folder>language</folder>
+      <folder>languages</folder>
+      <folder>models</folder>
+      <folder>tables</folder>
+      <folder>views</folder>
+      <filename>CHANGELOG.php</filename>
+      <filename>config.xml</filename>
+      <filename>controller.php</filename>
+      <filename>index.html</filename>
+      <filename>teams.php</filename>
+    </files>
+    <languages folder="admin/language">
+      <language tag="en-GB">en-GB.com_teams.ini</language>
+    </languages>
+  </administration>
+  <params/>
+</install>

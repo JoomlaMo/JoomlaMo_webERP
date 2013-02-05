@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6" method="upgrade">
+  <name>BreadTrails</name>
+  <creationDate>03-Sep-2011</creationDate>
+  <author>Mo Kelly</author>
+  <authorEmail>mo@joomlamo.com</authorEmail>
+  <authorUrl>http://www.joomlamo.com</authorUrl>
+  <copyright>Mo Kelly</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <version>1.7.1</version>
+  <description>Bread crumbs for URL previously visited on this site.  Store URL's and posted variables.  Present then as a pull down in the module to be selected and redirected</description>
+  <files folder="site">
+    <filename>CHANGELOG.php</filename>
+    <filename>index.html</filename>
+    <filename module="mod_breadtrails">mod_breadtrails.php</filename>
+  </files>
+  <params/>
+  <config>
+    <fields name="params">
+      
+    <fieldset name="basic" label="BASIC" description="ENTER_BREAD_TRAIL_PARAMETERS">
+        
+        
+        
+        
+        
+      <field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A_SUFFIX_TO_BE_APPLIED_TO_THE_CSS_CLASS_OF_THE_MODULE">
+	</field><field name="Post Variable 1" type="text" default="" size="25" label="Post Variable 1" description="LIST_THIS_PARAMETER_IN_SELECT_OPTION.">
+	</field><field name="Post Variable 2" type="text" default="" size="25" label="Post Variable 2" description="LIST_THIS_PARAMETER_IN_SELECT_OPTION.">
+	</field><field name="Post Variable 3" type="text" default="" size="25" label="Post Variable 3" description="LIST_THIS_PARAMETER_IN_SELECT_OPTION.">
+	</field><field name="Post Variable 4" type="text" default="" size="25" label="Post Variable 4" description="LIST_THIS_PARAMETER_IN_SELECT_OPTION.">
+	</field></fieldset></fields>
+  </config>
+</extension>
